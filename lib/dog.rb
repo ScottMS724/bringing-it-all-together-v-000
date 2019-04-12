@@ -49,7 +49,7 @@ class Dog
       WHERE id = ?
     SQL
     
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, id)
   end 
   
   def self.find_by_name(name)
