@@ -42,6 +42,7 @@ class Dog
     breed = attribute_hash[2]
     self.new(id, name, breed)
     self.save
+    self 
   end 
   
   def self.find_by_name(name)
