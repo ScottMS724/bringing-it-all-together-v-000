@@ -38,8 +38,8 @@ class Dog
   
   def create(attribute_hash)
     dog = self.new(attribute_hash)
-    self.save
-    self 
+    dog.save
+    dog
   end 
   
   def self.find_by_name(name)
