@@ -36,6 +36,14 @@ class Dog
     self.new(attributes_hash)
   end
   
+  def create(attribute_hash)
+    id = attribute_hash[0]
+    name = attribute_hash[1]
+    breed = attribute_hash[2]
+    self.new(id, name, breed)
+    self.save
+  end 
+  
   def self.find_by_name(name)
     sql = <<-SQL
       "SELECT *
