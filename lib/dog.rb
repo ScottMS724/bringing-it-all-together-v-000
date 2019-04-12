@@ -37,7 +37,7 @@ class Dog
   end
   
   def create(attribute_hash)
-    self.new(attribute_hash)
+    dog = self.new(attribute_hash)
     self.save
     self 
   end 
